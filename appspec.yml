@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /rerum/proof-express-and-mongodb-driver
 hooks:
-  BeforeInstall:
-    - location: /deploy_app.sh
+  AfterInstall:
+    - location: deploy_rerum.sh
       timeout: 300
       runas: root
